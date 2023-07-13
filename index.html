@@ -37,11 +37,26 @@
           <hr>
           <h3>Saving Our Work via Command Line/GitHub!</h3>
           <ol>
-            <div>Ensure you are working on the correct branch. Stage the changes.</div>
             <li>git add -A</li>
+              <div class="small">Ensure you are working on the correct branch. Stage the changes.</div>
             <li>git commit -m "added CSS to project"</li>
+              <div class="small">Now that all of our changes have been staged, we can commit to our repository.</div>  
             <li>git pull origin main</li>
+              <div class="small">Next, let's make sure our current branch is up to date before opening a pull request.</div>
             <li>git push origin feature/add-css</li>
+              <div class="small">Push up all of our changes</div>
+            <li>Now navigate to the correct repo in Github. Click the "Pull Requests" tab and then the "New pull request" button.</li>
+            <li>Make sure the base branch is main and the comparison branch is the feature/add-css branch. Add a title for the pull request along with a short description of the changes, as shown in the following screenshot:</li>
+            <div class="grow">
+              <img class="screenshot" src="assets/Screenshot 1.png" alt="GitHub Screenshot">
+            </div>
+            <li>Click the "Create pull request" button.</li>
+            <li>Now we can merge the comparison branch into the base branch by selecting the "Merge pull request" button and then confirming the merge request.</li>
+            <li>Great! Now we can close the GitHub issue for CSS. Go to the "Issues" tab and click the GitHub issue for CSS. Click the "Close issue" button. Now you should only see three issues left!</li>
+            <li>git checkout main</li>
+              <div class="small">Now update our local "main" branch. In your command line, navigate to the "main" branch and input the above code</div>
+            <li>git pull origin main</li>
+              <div class="small">Finally, pull the remote main branch into the local main branch.</div>
           </ol>
         </ul>
       </section>
@@ -54,8 +69,10 @@
       </section>
     </main>
 
-    <footer class="bg-primary">
-      <p>I can code!</p>
-    </footer>
+    <div class="footer container-fluid">
+      <footer class="bg-primary">
+        <p>I can code!</p>
+      </footer>
+    </div>
   </body>
 </html>
