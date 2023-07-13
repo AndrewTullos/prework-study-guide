@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prework Study Guide</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">  </head>
+    <link rel="stylesheet" href="./assets/style.css">  
+  </head>
   <body>
     <header id="top" class="bg-primary">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
-      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
@@ -33,6 +33,7 @@
         <h2 class="card-title">Git</h2>
         <ul>
           <li>git status: checks what branch we are currently on</li>
+          <li>If you are not on the main branch, run "git checkout main" to switch to the main branch.</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
           <li>"cd" changes the directory; similarly ".." walks back the directory one folder.</li>
           <hr>
@@ -40,13 +41,11 @@
           <ol>
             <li>git add -A</li>
               <div class="small">Ensure you are working on the correct branch. Stage the changes.</div>
-              <div class="small">If you are not on the main branch run:</div>
-              <li>git checout main</li>
-            <li>git commit -m “your message here”</li>
+            <li>git commit -m "added CSS to project"</li>
               <div class="small">Now that all of our changes have been staged, we can commit to our repository.</div>  
             <li>git pull origin main</li>
               <div class="small">Next, let's make sure our current branch is up to date before opening a pull request.</div>
-            <li>git push origin feature/add-"whatever you added"</li>
+            <li>git push origin feature/add-css</li>
               <div class="small">Push up all of our changes</div>
             <li>Now navigate to the correct repo in Github. Click the "Pull Requests" tab and then the "New pull request" button.</li>
             <li>Make sure the base branch is main and the comparison branch is the feature/add-css branch. Add a title for the pull request along with a short description of the changes, as shown in the following screenshot:</li>
@@ -60,6 +59,17 @@
               <div class="small">Now update our local "main" branch. In your command line, navigate to the "main" branch and input the above code</div>
             <li>git pull origin main</li>
               <div class="small">Finally, pull the remote main branch into the local main branch.</div>
+              <hr>
+              <div>
+                <h3>Short list for memory</h3>
+                <br>
+                git add -A
+                <br>
+                git commit -m “updated project README file”
+                <br>
+                git pull origin main
+                <br>
+                git push origin feature/"whatever branch you named"</div>
           </ol>
         </ul>
       </section>
@@ -67,7 +77,8 @@
       <section class="card " id="javascript-section">
         <h2 class="card-title">JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>A variable is a named container that allows us to store data in our code.</li>
+          <li>Control flow is the order in which a computer executes code in a script.</li>
         </ul>
       </section>
     </main>
