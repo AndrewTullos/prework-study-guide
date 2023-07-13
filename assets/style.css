@@ -6,8 +6,8 @@
 header,
 footer {
  width: 100%;
- height: 120px;
- background-color: blue;
+ height: auto;
+=======
  color: white;
 }
 
