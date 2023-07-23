@@ -15,3 +15,26 @@ for (let x = 0; x < topics.length; x++) {
 // } else {
 //   console.log('Please try again!');
 // }
+
+// const switchElement = document.querySelector('.switch')
+
+// switchElement.addEventListener('click', () => {
+//   document.body.classList .toggle('dark')
+//   document.section.classList.toggle('dark')
+// })
+
+const switchElement = document.querySelector('.switch');
+
+switchElement.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  
+  const sectionElements = document.querySelectorAll('section');
+  sectionElements.forEach((section) => {
+    section.classList.toggle('dark');
+    
+    const cardElements = section.querySelectorAll('.card');
+    cardElements.forEach((card) => {
+      card.classList.toggle('dark');
+    });
+  });
+});

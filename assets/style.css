@@ -1,44 +1,91 @@
 * {
- margin: 0;
- padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-header,
-footer {
- width: 100%;
- height: auto;
- background-color: blue;
- color: white;
+main {
+  margin-bottom: 100px; /* Adjust this value to match the height of your footer */
 }
+
+/* header,
+footer {
+  width: 100%;
+  height: auto;
+  color: white;
+} */
+
+
+header {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-center {
+  text-align: center;
+}
+
+.header-right {
+  display: inline-flex;
+  /* flex-direction: row; */
+  /* order: -1; */
+  /* align-items: right; */
+}
+
+.switch {
+  margin-left: 10px; /* Adjust the margin value to add spacing between the image and the switch */
+}
+
+
+
+
+
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+
 
 h1,
 h2 {
- text-align: center;
+  text-align: center;
 }
 
 img {
- display: block;
- height: 50px;
- width: 50px;
- margin-left: auto;
- margin-right: auto;
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul {
- padding-left: 40px;
- font-size: 20px;
+  padding-left: 40px;
+  font-size: 20px;
 }
 
 p {
- text-align: center;
- font-size: 30px;
+  text-align: center;
+  font-size: 30px;
 }
 
 .card {
   width: 80%;
   margin: 40px auto;
   border: 5px solid gray;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 5px 10px rgba(41, 43, 44, 0.5);
 }
 
 h3 {
@@ -53,22 +100,73 @@ h3 {
   margin-right: auto;
 }
 
-.grow img{
+.grow img {
   transition: 1s ease;
-  }
-  
-  .grow img:hover{
+}
+
+.grow img:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
   transition: 1s ease;
-  }
+}
 
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 60px;
-  line-height: 60px;
+  line-height: 60px; /* Adjust this value */
   box-sizing: border-box;
+}
+
+
+body {
+  transition: 0.4s;
+}
+
+.switch {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(39, 38, 30);
+  position: relative;
+  margin-left: 10px; /* Adjust this value to add spacing between the profile image and the switch */
+}
+
+.flicker {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  box-shadow:
+    inset 4px 4px 4px rgb(255, 255, 255),
+    inset -4px -4px 4px rgb(2 117 216);
+  transition: 0.4s;
+}
+
+.dark {
+  background-color: rgb(57, 57, 57);
+  transition: 0.4s;
+}
+
+.moon {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+
+.dark .flicker {
+  transform: translateX(40px);
+}
+
+.dark > * {
+  color: rgb(255, 255, 255);
 }
